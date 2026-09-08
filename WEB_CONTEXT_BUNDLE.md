@@ -210,80 +210,108 @@ This file is generated from repository truth and bounded for the web channel. It
     },
     "aliases": [
       "erdos-97",
-      "Erdős Problem #97"
+      "Erdős Problem 97"
     ],
     "allowed_axioms": [
-      "none"
+      "classical-mathematics",
+      "source-explicit-definitions-only"
     ],
     "assumptions": [
-      "No mathematical claim is admitted from the bounty title alone.",
-      "Source status and award status are observations, not mathematical Results."
+      "The current source status “falsifiable” and prize value “$100” are source observations, not mathematical Results.",
+      "Statement-faithfulness review must remain separate from any later proof verification."
     ],
     "constraints": {
       "allowed_adapters": [
-        "source-fidelity-review-v1"
+        "source-fidelity-review-v1",
+        "lean-obligation-v1"
       ],
       "allowed_methods": [
-        "discovery"
+        "discovery",
+        "derivation",
+        "computation",
+        "proof",
+        "formalization"
       ],
-      "max_attempts": 1,
+      "max_attempts": 20,
       "runtime": {
-        "max_output_bytes": 262144,
-        "max_retries": 1,
-        "max_transitions": 20,
-        "timeout_seconds": 300
+        "max_output_bytes": 5242880,
+        "max_retries": 3,
+        "max_transitions": 300,
+        "timeout_seconds": 1800
       }
     },
-    "created_at": "2026-09-08T08:24:29Z",
+    "created_at": "2026-09-08T09:35:00Z",
     "definitions": [
       {
-        "definition": "The problem identified by the Project Problem Key and cited source URLs; not yet an admitted mathematical statement.",
-        "term": "draft bounty target"
+        "definition": "All notation, quantifier scope, and mathematical objects are interpreted exactly as stated in the cited Erdős problem and, when present, its pinned formalization.",
+        "term": "source-native interpretation"
       }
     ],
     "domain": {
-      "description": "Draft source-native bounty problem intake; exact mathematical domain remains subject to statement-faithfulness review.",
+      "description": "Finite nonempty sets of points in the Euclidean plane in convex position.",
       "objects": [
-        "objects explicitly named by the cited problem source"
+        "finite planar point set",
+        "convex position",
+        "Euclidean distance",
+        "equidistant points"
       ]
     },
-    "lifecycle": "draft",
+    "lifecycle": "active",
     "msc": [
-      "00A00"
+      "52C10"
     ],
     "problem_id": "problem:erdosproblems-97",
     "quantifiers": [
       {
-        "domain": "an exact, source-faithful ProblemContract for the cited bounty problem",
-        "kind": "find",
+        "domain": "finite nonempty planar point sets in convex position",
+        "kind": "forall",
         "variables": [
-          "reviewed_problem_contract"
+          "A"
+        ]
+      },
+      {
+        "domain": "vertices p in A having no four other vertices at one common positive distance",
+        "kind": "exists",
+        "variables": [
+          "p"
         ]
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-08T08:24:29Z",
-        "source": "Bounty problem source",
-        "source_record_id": "erdosproblems:97",
+        "retrieved_at": "2026-09-08T09:35:00Z",
+        "source": "Erdős Problems current problem page",
+        "source_record_id": "97",
         "url": "https://www.erdosproblems.com/97"
       },
       {
-        "retrieved_at": "2026-09-08T08:24:29Z",
-        "source": "Vibe Mathing Project #2 bounty intake",
-        "source_record_id": "erdosproblems:97",
+        "retrieved_at": "2026-09-08T09:35:00Z",
+        "source": "Formal Conjectures Apache-2.0 formalization",
+        "source_record_id": "FormalConjectures/ErdosProblems/97.lean",
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/858d0e73105101fbc9f86c6d6dd86bbc6d4d789e/FormalConjectures/ErdosProblems/97.lean"
+      },
+      {
+        "retrieved_at": "2026-09-08T09:35:00Z",
+        "source": "Erdős Problems current machine status",
+        "source_record_id": "97",
+        "url": "https://raw.githubusercontent.com/teorth/erdosproblems/main/data/problems.yaml"
+      },
+      {
+        "retrieved_at": "2026-09-08T09:35:00Z",
+        "source": "Vibe Mathing Project #2 award record",
+        "source_record_id": "erdos-97",
         "url": "https://github.com/users/vibemathing/projects/2"
       }
     ],
     "statement": {
       "language": "en",
-      "text": "Draft bounty intake target(s): Erdős Problem #97. The exact mathematical statement, quantifiers, definitions, assumptions, and acceptance conditions have not yet been frozen; this draft is not research-admitted.",
+      "text": "Does every finite set A of points in the plane in convex position have a vertex p for which there do not exist four other points of A all at the same positive distance from p?",
       "version": 1
     },
-    "title": "Erdős Problem #97",
-    "updated_at": "2026-09-08T08:24:29Z"
+    "title": "Erdős Problem #97: equidistant vertices in convex polygons",
+    "updated_at": "2026-09-08T09:35:00Z"
   },
-  "problem_contract_sha256": "56220f44a302f81ecbb7e58893f236dff73c52ca90f2b841018f912441e7975b"
+  "problem_contract_sha256": "a93858f7309936b69cfcbb02f9b6dd0776a57dcdc3a38863479ce3c5044b944b"
 }
 ```

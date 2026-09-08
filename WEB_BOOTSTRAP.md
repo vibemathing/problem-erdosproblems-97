@@ -7,12 +7,12 @@
 - Default branch: `main`
 - Visibility: `public`
 - Canonical Problem: `problem:erdosproblems-97`
-- ProblemContract SHA-256: `56220f44a302f81ecbb7e58893f236dff73c52ca90f2b841018f912441e7975b`
-- Problem lifecycle: `draft`
-- Problem admission: `preview_unadmitted`
+- ProblemContract SHA-256: `a93858f7309936b69cfcbb02f9b6dd0776a57dcdc3a38863479ce3c5044b944b`
+- Problem lifecycle: `active`
+- Problem admission: `canonical_admitted`
 - Harness suite: `harness-source:web-research-full` `1.2.4`
 - Suite manifest SHA-256: `fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3`
-- Harness snapshot SHA-256: `7a0859f2d8eacf34ad00928b692dbe951eabf7312e528663c0d8ff5cae8ee45d`
+- Harness snapshot SHA-256: `8db08d67814d599848baaa5425144d3ea687bad7c73c7400cc26591801b74059`
 - Channel: `chatgpt-web-github-issue-pr-writer`
 
 ## Required read order
